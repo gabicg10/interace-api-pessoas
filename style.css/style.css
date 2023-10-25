@@ -1,0 +1,45 @@
+Paleta de Cores{
+   color:#FFF3DA
+         #DFCCFB
+         #D0BFFF
+         #BEADFA
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.Rectangle1{
+    width: 35%;
+    height: 150vh;
+    background: #D0BFFF;
+}
+.logo{
+    width: 279px; 
+    height: 231px; 
+    align-items: center ;
+}
+.txt1{
+    top: 300px;
+}
+
+.Rectangle2{
+    width: 65%;
+    height: 150vh;
+    background: #FFF3DA; 
+}
+h1,h2,h3, .btn{
+    text-align: center;
+}
+
+.btn1{
+    background-color: #FFF3DA!important;
+    align-items: center;
+    border: #FFF3DA;
+}
+.btn2{
+    background-color:  #BEADFA!important;
+    align-items: center;
+    border: #BEADFA;
+}
