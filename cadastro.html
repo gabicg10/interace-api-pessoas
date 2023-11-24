@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-        <!--Bootstrap-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="style.css/style.css">
-        
+    <link rel="stylesheet" href="style.css/style.css">
 
-    </head>
 
-    <body>
-        <div class="Rectangle1">
-            <img class="logo" src="assets/img/logo.png">
-            <h2 class="txt1"> Seja Bem-Vindo!</h2>
-            <button type="button" class="btn1">Login</button>
-            <h3 class="txt2">Esqueceu a senha?</h3>
-        </div>
-        <div class="Rectangle2">
-            <h1>Crie sua conta</h1>
-            <h2>Preencha os dados:</h2>
+</head>
+
+<body>
+    <div class="Rectangle1">
+        <img class="logo" src="assets/img/logo.png">
+        <h2 class="txt1"> Seja Bem-Vindo!</h2>
+        <button type="button" class="btn1">Login</button>
+        <h3 class="txt2">Esqueceu a senha?</h3>
+    </div>
+    <div class="Rectangle2">
+        <h1>Crie sua conta</h1>
+        <h2>Preencha os dados:</h2>
+        <form>
             <div class="form-floating mb-3">
-                <input type="name" class="form-control" name="nome-pessoa" id="floatingInput"
-                    placeholder="name@example.com">
+                <input type="name" class="form-control" name="nome-pessoa" id="floatingInput" required minlength="3"
+                    maxlength="100" placeholder="name@example.com">
                 <label for="floatingInput">Nome:</label>
             </div>
             <div class="form-floating mb-3">
@@ -42,28 +43,34 @@
                 <label for="floatingInput">Data de Nascimento:</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="cpf" class="form-control" name="cpf" id="floatingInput" placeholder="name@example.com">
+                <input type="cpf" class="form-control" name="cpf" id="floatingInput" required minlength="11"
+                    maxlength="11" placeholder="name@example.com">
                 <label for="floatingInput">CPF:</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="tel" class="form-control" name="telefone" id="floatingInput" placeholder="name@example.com">
+                <input type="tel" class="form-control" name="telefone" id="floatingInput" required minlength="9"
+                    maxlength="11" placeholder="name@example.com">
                 <label for="floatingInput">Telefone:</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="adress" class="form-control" name="endereco" id="floatingInput" placeholder="name@example.com">
+                <input type="adress" class="form-control" name="endereco" id="floatingInput" required minlength="3"
+                    maxlength="50" placeholder="name@example.com">
                 <label for="floatingInput">Endereço:</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="height" class="form-control" name="altura" id="floatingInput" placeholder="name@example.com">
+                <input type="height" class="form-control" name="altura" id="floatingInput" required minlength="2"
+                    maxlength="3" placeholder="name@example.com">
                 <label for="floatingInput">Altura:</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="weight" class="form-control" name="peso" id="floatingInput" placeholder="name@example.com">
+                <input type="weight" class="form-control" name="peso" id="floatingInput" placeholder="name@example.com"
+                    required minlength="3" maxlength="50">
                 <label for="floatingInput">Peso:</label>
             </div>
-            <button type="button" class="btn2" onclick="cadastrar()">Criar sua Conta</button>
-        </div>
+            <button type="submit" class="btn2" onclick="cadastrar()">Criar sua Conta</button>
+        </form>
 
         <script src="js/requests.js"></script>
-    </body>
+</body>
+
 </html>
